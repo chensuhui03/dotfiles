@@ -18,6 +18,12 @@ else
     fi
 fi
 unset __conda_setup
+
+# added by Anaconda3 5.2.0 installer on macbook pro
+if [ -f "/Users/chensuhui/anaconda3/etc/profile.d/conda.sh" ]; then
+		export PATH=/Users/chensuhui/anaconda3/bin:$PATH
+        . "/Users/chensuhui/anaconda3/etc/profile.d/conda.sh"
+fi
 # <<< conda initialize <<<
 
 
